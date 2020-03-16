@@ -1,0 +1,20 @@
+var palabras = prompt("Pon palabras para saber si son Palindromo");
+
+function palabrasPalindromo(palabras) {
+    
+    palabras=palabras.toLowerCase().replace();
+    palabrasReverse=palabras.split("").reverse().toString();
+
+    for (var i =0; 1 < ((palabrasReverse.length)-1); i++) {
+        palabrasReverse=palabrasReverse.replace(",","");
+    };
+    
+    if(palabras==palabrasReverse){
+        resultado="es Palindromo";
+    }
+    else{
+        resultado="no es Palindromo";
+    }
+    document.write("palabras" + resultado);
+}
+palabrasPalindromo(palabras);
